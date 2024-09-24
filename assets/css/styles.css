@@ -1,0 +1,62 @@
+/* General body styles (Dark Mode) */
+body {
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text for contrast */
+    text-align: center;
+}
+
+/* Container to center content */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Header with logos */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+/* Flex container for the logos */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* Logo image styling */
+.logo-container img {
+    width: auto;
+    height: 70px;
+    cursor: pointer;
+}
+
+/* Title styling */
+h1 {
+    margin: 30px 0;
+    font-size: 2.2em;
+    color: #ffffff;
+}
+
+/* Video styling */
+video {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    margin-top: 20px;
+    border: 1px solid #444444; /* Optional: light border to define the video */
+}
+
+/* Abstract styling (just simple text below the video) */
+.abstract {
+    margin-top: 20px;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: left;
+    color: #cccccc; /* Slightly lighter text for the abstract */
+}
