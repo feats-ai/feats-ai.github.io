@@ -1,115 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <title>FEATS</title>
 
-        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/styles.css">
-
+        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/styles.css" />
     </head>
 
     <body>
         <header>
             <div class="logo-container">
-                <a href="https://www.ias.informatik.tu-darmstadt.de/" target="_blank"><img src="assets/images/IAS_vectorized.svg" alt="IAS"></a>
-                <a href="https://www.dfki.de/" target="_blank"><img src="assets/images/DFKI.svg" alt="DFKI"></a>
-                <a href="https://hessian.ai/" target="_blank"><img src="assets/images/hessian_ai-2.webp" alt="HessianAI"></a>
-                <a href="https://www.lab3.org" target="_blank"><img src="assets/images/LAB3.png" alt="LAB3"></a>
-                <a href="https://www.tu-darmstadt.de/" target="_blank"><img src="assets/images/TU_Darmstadt_Logo.svg" alt="TUDa"></a>
+                <a
+                    href="https://www.ias.informatik.tu-darmstadt.de/"
+                    target="_blank"
+                    ><img src="assets/images/IAS_vectorized.svg" alt="IAS"
+                /></a>
+                <a href="https://www.dfki.de/" target="_blank"
+                    ><img src="assets/images/DFKI.svg" alt="DFKI"
+                /></a>
+                <a href="https://hessian.ai/" target="_blank"
+                    ><img src="assets/images/hessian_ai-2.webp" alt="HessianAI"
+                /></a>
+                <a href="https://www.lab3.org" target="_blank"
+                    ><img src="assets/images/LAB3.png" alt="LAB3"
+                /></a>
+                <a href="https://www.tu-darmstadt.de/" target="_blank"
+                    ><img src="assets/images/TU_Darmstadt_Logo.svg" alt="TUDa"
+                /></a>
             </div>
         </header>
 
         <div class="container">
-            <h1 class="flexible-heading">Learning Force Distribution Estimation for the GelSight Mini Optical Tactile Sensor Based on Finite Element Analysis</h1>
+            <h1 class="flexible-heading">
+                Learning Force Distribution Estimation for the GelSight Mini
+                Optical Tactile Sensor Based on Finite Element Analysis
+            </h1>
 
-            <video controls>
-                <source src="assets/videos/FEATS.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <p class="abstract">
-                Contact-rich manipulation remains a major challenge in robotics. Optical tactile sensors like GelSight Mini 
-                offer a low-cost solution for contact sensing by capturing soft-body deformations of the silicone gel. However, 
-                accurately inferring shear and normal force distributions from these gel deformations has yet to be fully addressed. 
-                In this work, we introduce FEATS -- Finite Element Analysis for Tactile Sensing -- a machine learning 
-                approach using a U-net architecture to predict force distributions directly from the sensor's raw images. 
-                Our model, trained on force distributions inferred from Finite Element Analysis, demonstrates promising 
-                accuracy in predicting normal and shear force distributions. It also shows potential for generalization 
-                across sensors of the same type and for enabling real-time application.
-            </p>
-
-            <hr class="section-divider">
-            
-            <h2>Paper</h2>
-            <p class="paper">
-                Latest version: <a href="https://www.ias.informatik.tu-darmstadt.de/uploads/Team/NiklasFunk/feats.pdf" target="_blank">feats.pdf</a> <br>
-                Submitted to IEEE International Conference on Robotics & Automation (ICRA) 2025 (under review)
-            </p>
-            
-            <div class="paper-container">
-                <a href="https://www.ias.informatik.tu-darmstadt.de/uploads/Team/NiklasFunk/feats.pdf" target="_blank"><img src="assets/images/paper.png" alt="Paper"></a>
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/I8E4IsQCwvw"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
             </div>
 
-            <br><h2>Code and Dataset</h2>
+            <p class="abstract">
+                Contact-rich manipulation remains a major challenge in robotics.
+                Optical tactile sensors like GelSight Mini offer a low-cost
+                solution for contact sensing by capturing soft-body deformations
+                of the silicone gel. However, accurately inferring shear and
+                normal force distributions from these gel deformations has yet
+                to be fully addressed. In this work, we introduce FEATS --
+                Finite Element Analysis for Tactile Sensing -- a machine
+                learning approach using a U-net architecture to predict force
+                distributions directly from the sensor's raw images. Our model,
+                trained on force distributions inferred from Finite Element
+                Analysis, demonstrates promising accuracy in predicting normal
+                and shear force distributions. It also shows potential for
+                generalization across sensors of the same type and for enabling
+                real-time application.
+            </p>
+
+            <hr class="section-divider" />
+
+            <h2>Paper</h2>
+            <p class="paper">
+                Latest version:
+                <a
+                    href="https://arxiv.org/abs/2411.03315"
+                    target="_blank"
+                    >arXiv</a
+                <br />
+                Submitted to IEEE International Conference on Robotics &
+                Automation (ICRA) 2025 (under review)
+            </p>
+
+            <div class="paper-container">
+                <a
+                    href="https://www.ias.informatik.tu-darmstadt.de/uploads/Team/NiklasFunk/feats.pdf"
+                    target="_blank"
+                    ><img src="assets/images/paper.png" alt="Paper"
+                /></a>
+            </div>
+
+            <br />
+            <h2>Code and Dataset</h2>
             <script src="https://tarptaeya.github.io/repo-card/repo-card.js"></script>
             <div class="repo-dataset-container">
-                <div class="repo-card" data-repo="feats-ai/feats" data-theme="dark-theme"></div>
+                <div
+                    class="repo-card"
+                    data-repo="feats-ai/feats"
+                    data-theme="dark-theme"
+                ></div>
                 <div class="dataset-info">
-                    <a href="https://archimedes.ias.informatik.tu-darmstadt.de/s/LWJxkmxrnPTSqTp" target="_blank"><img src="assets/images/folder.svg" alt="Folder Icon" class="dataset-image"></a>
-                    <p><a href="https://archimedes.ias.informatik.tu-darmstadt.de/s/LWJxkmxrnPTSqTp" targe="_blank">FEATS Dataset</a></p>
+                    <a
+                        href="https://archimedes.ias.informatik.tu-darmstadt.de/s/LWJxkmxrnPTSqTp"
+                        target="_blank"
+                        ><img
+                            src="assets/images/folder.svg"
+                            alt="Folder Icon"
+                            class="dataset-image"
+                    /></a>
+                    <p>
+                        <a
+                            href="https://archimedes.ias.informatik.tu-darmstadt.de/s/LWJxkmxrnPTSqTp"
+                            targe="_blank"
+                            >FEATS Dataset</a
+                        >
+                    </p>
                 </div>
             </div>
 
-            <hr class="section-divider">
+            <hr class="section-divider" />
 
             <h2>Team</h2>
             <div class="team-container">
                 <div class="team-member">
                     <a href="https://github.com/erikhelmut" target="_blank">
-                        <img src="assets/images/erik.png" alt="Erik" class="team-photo">
+                        <img
+                            src="assets/images/erik.png"
+                            alt="Erik"
+                            class="team-photo"
+                        />
                         <p class="team-name">Erik Helmut<sup>*1</sup></p>
                     </a>
                 </div>
                 <div class="team-member">
-                    <a href="https://github.com/DariusSchneider" target="_blank">
-                        <img src="assets/images/luca.jpeg" alt="Luca" class="team-photo">
+                    <a
+                        href="https://github.com/DariusSchneider"
+                        target="_blank"
+                    >
+                        <img
+                            src="assets/images/luca.jpeg"
+                            alt="Luca"
+                            class="team-photo"
+                        />
                         <p class="team-name">Luca Dziarski<sup>*2</sup></p>
                     </a>
                 </div>
                 <div class="team-member">
                     <a href="https://niklasfunk.com/" target="_blank">
-                        <img src="assets/images/niklas.png" alt="Niklas" class="team-photo">
+                        <img
+                            src="assets/images/niklas.png"
+                            alt="Niklas"
+                            class="team-photo"
+                        />
                         <p class="team-name">Niklas Funk<sup>2</sup></p>
                     </a>
                 </div>
                 <div class="team-member">
                     <a href="http://boris-belousov.net/" target="_blank">
-                        <img src="assets/images/boris.jpeg" alt="Boris" class="team-photo">
+                        <img
+                            src="assets/images/boris.jpeg"
+                            alt="Boris"
+                            class="team-photo"
+                        />
                         <p class="team-name">Boris Belousov<sup>3</sup></p>
                     </a>
                 </div>
                 <div class="team-member">
-                    <a href="https://www.ias.informatik.tu-darmstadt.de/Team/JanPeters" target="_blank">
-                        <img src="assets/images/jan.png" alt="Jan" class="team-photo">
+                    <a
+                        href="https://www.ias.informatik.tu-darmstadt.de/Team/JanPeters"
+                        target="_blank"
+                    >
+                        <img
+                            src="assets/images/jan.png"
+                            alt="Jan"
+                            class="team-photo"
+                        />
                         <p class="team-name">Jan Peters<sup>2,3,4,5</sup></p>
                     </a>
                 </div>
             </div>
             <p class="team-faculty">
                 <sup>*</sup>Authors contributed equally
-                &nbsp;<sup>1</sup>Department of Computational Engineering, Technical University of Darmstadt
-                &nbsp;<sup>2</sup>Department of Computer Science, Technical University of Darmstadt
+                &nbsp;<sup>1</sup>Department of Computational Engineering,
+                Technical University of Darmstadt &nbsp;<sup>2</sup>Department
+                of Computer Science, Technical University of Darmstadt
                 &nbsp;<sup>3</sup>German Research Center for AI (DFKI)
-                &nbsp;<sup>4</sup>Centre for Cognitive Science, Technical University of Darmstadt 
-                &nbsp;<sup>5</sup>Hessian Center for Artificial Intelligence (Hessian.AI), Darmstadt
+                &nbsp;<sup>4</sup>Centre for Cognitive Science, Technical
+                University of Darmstadt &nbsp;<sup>5</sup>Hessian Center for
+                Artificial Intelligence (Hessian.AI), Darmstadt
             </p>
 
-            <br><h2>BibTeX</h2>
+            <br />
+            <h2>BibTeX</h2>
             <div class="terminal">
                 <pre>
 @misc{FEATS2024,
@@ -123,5 +206,4 @@
             </div>
         </div>
     </body>
-
 </html>
